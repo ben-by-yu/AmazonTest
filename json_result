@@ -1,0 +1,110 @@
+[
+  {
+    "uri": "features/amazon.feature",
+    "id": "",
+    "keyword": "Feature",
+    "name": "",
+    "description": "  In order to purchase it later\n  As a consumer\n  I want to add a book to my shopping cart",
+    "line": 1,
+    "elements": [
+      {
+        "id": ";consumer-can-add-a-book-to-shopping-cart",
+        "keyword": "Scenario",
+        "name": "Consumer can add a book to shopping cart",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "before": [
+          {
+            "output": [
+              "This is before hook."
+            ],
+            "match": {
+              "location": "features/support/env.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18504935496
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open \"http://www.amazon.com\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/amazon_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11332016162
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Fifth Season\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/amazon_steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13458882013
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I open the first book",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/amazon_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10724720286
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the first book to shopping cart",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/amazon_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1975636320
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the book in my shopping cart",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/amazon_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7377719921
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "This is after hook."
+            ],
+            "match": {
+              "location": "features/support/env.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7357352991
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
