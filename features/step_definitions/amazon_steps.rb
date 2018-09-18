@@ -32,5 +32,5 @@ And(/^I add the first book to shopping cart$/) do
 end
 
 Then(/^I should see the book in my shopping cart$/) do
-  expect(@book_page.checkCart).to eq("1")
+  expect(@book_page.checkCart).to eq("3")
 end
